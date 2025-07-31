@@ -5,8 +5,23 @@ venv
 .motia
 .mermaid
 dist
-*.pyc*.png
-*.jpg
+*.pyc
+
+# Environment variables
+.env
+
+# Image processing outputs (legacy - now using S3)
 output/
+*.png
+*.jpg
+*.jpeg
+*.base64.json
+
+# System files
 *.DS_Store
+
+# Kiro IDE
 .kiro
+
+# AWS credentials (if using files)
+.aws/
